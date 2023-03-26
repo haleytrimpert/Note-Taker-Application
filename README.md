@@ -4,14 +4,14 @@ Module 11 Challenge
 
 ## Description
 
-This application is a workday scheduler. It shows the current date at the top of the page, and shows hours 9-5 and knows the current hour of the day. The hours will change color depending on the time; gray for past, red for present and green for future. There is also a text box in each time slot which allows for entering notes, and the save button will save those notes. Whatever notes were saved will be stored into local storage and be available when refreshing the page.
+This application is a Note Taker Application. The user can notes with a title and a body. After typing the note it can be saved, and then the user can click on the note and add to an existing note. If the user needs to they can also delete any note.
 
 ## Screenshots
 
-![Picture 1](./Assets/../pictures/Screenshot1.png)
+![Picture 1](./public/assets/pictures/Screenshot1.png)
 
-![Picture 2](./Assets/../pictures/Screenshot2.png)
+![Picture 2](./public/assets/pictures/Screenshot2.png)
 
 ## Link
 
-https://haleytrimpert.github.io/work-day-scheduler/
+https://module-11-notetakerapp.herokuapp.com/

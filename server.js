@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const routes = require('./public/routes/index');
-//const notes = express.Router();
+
 
 const PORT = process.env.PORT || 3001;
 

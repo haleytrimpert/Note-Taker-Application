@@ -10,11 +10,8 @@ noteR.get("/notes", (req, res) =>
 );
 
 noteR.get("/api/notes", (req, res) =>
-  //res.sendFile(path.join(__dirname, "../../db/db.json"))
   readFromFile("./db/db.json").then((data) => res.json(JSON.parse(data)))
 );
-
-//let array = [];
 
 noteR.post("/api/notes", (req, res) => {
   const newNote = {
@@ -23,14 +20,6 @@ noteR.post("/api/notes", (req, res) => {
     id: db.length + 1,
   };
   console.log(db);
-  //hit the save button,request info sent to bd.json, apply to notes.html
-  // fs.readFile(path.join(__dirname, "../../db/db.json"), (error, data) => {
-  //   //const json = JSON.parse(data);
-  //   array = JSON.parse(data);
-  //   //json.push(req.body);
-  //   console.info(req.body);
-  //   return array;
-  // });
   db.push(newNote);
   console.log(db);
   fs.writeFile(
@@ -43,7 +32,6 @@ noteR.post("/api/notes", (req, res) => {
       }
     }
   );
-  //json.push(newNote);
 
   res.send(db);
 });
